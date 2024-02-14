@@ -1,11 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<li>
-    <ul>hey</ul>
-    <ul>hey</ul>
-    <ul>hey</ul>
-    <ul>hey</ul>
-    <ul>hey</ul>
-</li>
+<h1>Demo Project</h1>
+<p>See pages below:</p>
+<ul>
+    <li><a href="/Crypto">Cryptocurrencies</a></li>
+    <li><a href="/RickAndMorty">Rick and Morty</a></li>
+</ul>
 
-<a href="/For you">For you</a>
