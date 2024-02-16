@@ -1,6 +1,6 @@
 export const load = async () => {
   let characters = []
-  for (let i = 0; i < 42; i++) {
+  for (let i = 0; i < 100; i++) {
     const reqCharacters = await fetch(
       'https://rickandmortyapi.com/graphql/',
       {
@@ -29,7 +29,12 @@ export const load = async () => {
       },
     } = await reqCharacters.json()
   
-    characters.push(...results);
+    if (results.length === 0) {
+      break;
+    } else {
+      characters.push(...results);
+    }
+
 
   }
   return {
