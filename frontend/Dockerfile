@@ -1,14 +1,13 @@
-FROM node:16-alpine
+FROM node:18
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json .
 
 RUN npm install
-RUN
 
 COPY . .
 
-ENV HOST=0.0.0.0
+EXPOSE 4040
 
-CMD ["npm", "run", "build"]
+CMD [ "npm", "run", "dev" ]
